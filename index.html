@@ -28,15 +28,30 @@
   <section v-for="(value, title) in sections">
     <h2>{{ title }}</h2>   <button><i class="far fa-edit"></i>Edit</button>
        <div class="group">
-         <div class="card" v-for="something in value">
-           <h3>{{something.title}}</h3>
-           <span><a href="{{something.url}}">{{something.desc}}</a></span>
+         <a v-for="something in value" href="{{something.title}}">
+         <div class="card" >
+             <h3>{{something.title}}</h3>
+             <span>{{something.desc}}</span>
          </div>
-         <div class="card add-link">
+       </a>
+         <div class="card add-link" v-on:click="createBookmark">
            <i class="far fa-plus-square"></i> Add a new Link</button>
          </div>
      </div>
   </section>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" v-on:click="closeModal"><i class="far fa-times-circle"></i></span>
+      <label>Title</label><input placeholder="header"></input><br>
+      <label>Description</label><input placeholder="header"></input><br>
+      <label>URL</label><input placeholder="header"></input><br>
+      <button v-on:click="addObject">Submit</button>
+    </div>
+
+  </div>
 </div>
 </body>
 </html>
