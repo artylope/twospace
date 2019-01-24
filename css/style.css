@@ -52,15 +52,19 @@ h2 {
 
 .add-link {
   background: transparent !important;
-  border: 1px dashed #ccc;
+  border: 1px dashed #9ea8ad;
   box-shadow: none !important;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: #3C43E6;
+  font-size: 20px; }
+  .add-link i {
+    margin-right: 10px; }
   .add-link:hover {
-    color: #fff !important;
-    transform: translateY(0px) !important; }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+    background-color: #fff !important; }
 
 .no-card {
   background-color: transparent !important;
@@ -75,7 +79,6 @@ button {
   font-size: 20px;
   cursor: pointer;
   border-radius: 5px;
-  text-transform: uppercase;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.1s ease-in; }
   button:hover {

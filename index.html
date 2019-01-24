@@ -12,39 +12,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+  <script src="js/app.js"></script>
+
 </head>
 
 <body>
+  <div id="app">
   <header id="header">
     <h1>TWOspace</h1>
   </header>
-
   <section id="default">
     <button>Create Section</button>
   </section>
-
-  <section id="admin">
-    <h2>Admin</h2>   <button><i class="far fa-edit"></i>Edit</button>
-    <div class="group">
-      <div class="card"><h3>ACE</h3><span>Apply leave, submit claims.</span></div>
-      <div class="card"><h3>iLearn</h3><span>Search and apply for courses.</span></div>
-      <div class="card"><h3>EUSH</h3><span>End User Self Help. Windows password reset.</span></div>
-      <div class="card"><h3>ACCESS</h3><span>Performance review. Peer Bonus. Ugly Interface.</span></div>
-      <div class="card add-link"><button><i class="far fa-plus-square"></i> Add Link</button></div>
-      <div class="card no-card"></div>
-    </div>
+  <section v-for="(value, title) in sections">
+    <h2>{{ title }}</h2>   <button><i class="far fa-edit"></i>Edit</button>
+       <div class="group">
+         <div class="card" v-for="something in value">
+           <h3>{{something.title}}</h3>
+           <span><a href="{{something.url}}">{{something.desc}}</a></span>
+         </div>
+         <div class="card add-link">
+           <i class="far fa-plus-square"></i> Add a new Link</button>
+         </div>
+     </div>
   </section>
-  <section id="productivity">
-    <h2>Productivity</h2>   <button><i class="far fa-edit"></i>Edit</button>
-      <div class="group">
-        <div class="card"><h3>OneDrive</h3><span>Shared Drive</span></div>
-        <div class="card"><h3>EtherDocs</h3><span>Collaborative editing on documents</span></div>
-        <div class="card"><h3>Form.gov.sg</h3><span>Create government forms and surveys in minutes.</span></div>
-        <div class="card"><h3>Data.gov.sg</h3><span>Government's public data repository</span></div>
-        <div class="card"><h3>Isomer.gov.sg</h3><span>Build a government website quickly.</span></div>
-        <div class="card add-link"><button><i class="far fa-plus-square"></i>Add Link</button></div>
-      </div>
-  </section>
-  <script src="js/scripts.js"></script>
+</div>
 </body>
 </html>
