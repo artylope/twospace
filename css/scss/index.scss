@@ -7,12 +7,32 @@ body{
   margin: 0 auto;
   background-color: #E3E9EA;
   line-height: 1.4;
-  max-width: 1440px;
+  max-width: 1380px;
 }
 
+header{
+  button{
+    margin: 10px;
+    float: right;
+    clear: both;
+  }
+}
 section{
-
   margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  .row{
+    justify-content: space-between;
+    h2{
+      margin: 20px;
+    }
+    button{
+      margin: 20px;
+      float: right;
+      clear: both;
+    }
+  }
+  // border-bottom: 1px solid darken(#E3E9EA, 5%);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -32,7 +52,6 @@ h2{
 .group{
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
   flex-wrap: wrap;
   align-items: center;
   justify-content: left;
@@ -42,23 +61,30 @@ h2{
     color: #242A2E;
   }
 
-  .card{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 150px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    background-color: #fff;
-    transition: all 0.25s ease-in;
-    // border-top: 10px solid #fff;
+  .card-group{
+    // display: flex;
+    // flex-direction: column;
+    // width: 300px;
+    padding:10px;
 
+    .card{
+      padding: 20px;
+      height: 150px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      transition: all 0.25s ease-in;
+      // border-top: 10px solid #fff;
 
-    &:hover{
-      transform: translateY(-5px);
+      &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: all 0.1s ease-in;
+      }
+      &:active{
+        transform: translateY(2px);
+      }
     }
 
     h3{
@@ -108,11 +134,10 @@ button{
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: all 0.1s ease-in;
 
   &:hover{
     background-color: lighten($primary-color,5%);
-    
+
   }
   i{
     margin-right: 10px;
@@ -140,7 +165,9 @@ button{
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 40%;
+  min-width: 200px;
+  min-height: 320px;
 }
 
 /* The Close Button */

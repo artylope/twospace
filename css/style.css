@@ -5,10 +5,25 @@ body {
   margin: 0 auto;
   background-color: #E3E9EA;
   line-height: 1.4;
-  max-width: 1440px; }
+  max-width: 1380px; }
+
+header button {
+  margin: 10px;
+  float: right;
+  clear: both; }
 
 section {
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  section .row {
+    justify-content: space-between; }
+    section .row h2 {
+      margin: 20px; }
+    section .row button {
+      margin: 20px;
+      float: right;
+      clear: both; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -24,7 +39,6 @@ h2 {
 .group {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
   flex-wrap: wrap;
   align-items: center;
   justify-content: left;
@@ -32,25 +46,27 @@ h2 {
   .group a {
     text-decoration: none;
     color: #242A2E; }
-  .group .card {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 150px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    background-color: #fff;
-    transition: all 0.25s ease-in; }
-    .group .card:hover {
-      transform: translateY(-5px); }
-    .group .card h3 {
+  .group .card-group {
+    padding: 10px; }
+    .group .card-group .card {
+      padding: 20px;
+      height: 150px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      background-color: #fff;
+      transition: all 0.25s ease-in; }
+      .group .card-group .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.1s ease-in; }
+      .group .card-group .card:active {
+        transform: translateY(2px); }
+    .group .card-group h3 {
       color: #3A4145;
       font-size: 30px;
       margin-bottom: 10px; }
-    .group .card p {
+    .group .card-group p {
       color: #242A2E; }
 
 .add-link {
@@ -82,8 +98,7 @@ button {
   font-size: 20px;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: all 0.1s ease-in; }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
   button:hover {
     background-color: #5359e9; }
   button i {
@@ -118,7 +133,9 @@ button {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; }
+  width: 40%;
+  min-width: 200px;
+  min-height: 320px; }
 
 /* The Close Button */
 .close {

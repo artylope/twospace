@@ -8,14 +8,14 @@ window.onload = function () {
       sections: {
         "Admin": [
           {
-            title: "ACE",
+            title: "HR Portal aka ACE",
             desc: "Apply leave, submit claims.",
             url  : "https://portal.ace.gov.sg",
           },
 
           {
-            title: "ACCESS",
-            desc: "Performance review. Peer Bonus. Ugly Interface.",
+            title: "Personal Development",
+            desc: "Performance review. Peer Bonus. Security Clearance. Ugly Interface.",
             url  : "https://portal.ace.gov.sg",
           },
           {
@@ -24,8 +24,13 @@ window.onload = function () {
             url  : "https://portal.ace.gov.sg",
           },
           {
-            title: "iLearn",
+            title: "Personal Development Portal aka iLearn",
             desc: "Search and apply for courses.",
+            url  : "https://portal.ace.gov.sg",
+          },
+          {
+            title: "iPRS",
+            desc: "Purchase Order Request Stuff",
             url  : "https://portal.ace.gov.sg",
           },
         ],
@@ -48,6 +53,11 @@ window.onload = function () {
             },
             {
               title: "Isomer",
+              desc: "Build a secure government website quickly.",
+              url  : "https://portal.ace.gov.sg",
+            },
+            {
+              title: "Vault",
               desc: "Build a secure government website quickly.",
               url  : "https://portal.ace.gov.sg",
             },
