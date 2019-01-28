@@ -7,13 +7,14 @@ body{
   margin: 0 auto;
   background-color: #E3E9EA;
   line-height: 1.4;
-  max-width: 1380px;
 }
 
 header{
   padding-top: 50px;
   padding-bottom: 50px;
   border-bottom: 1px solid darken(#E3E9EA, 5%);
+  background: #CADCE0;
+  padding: 50px 20px;
   h1{
     color: darken(#2F3D48,10%);
     margin-left: 20px;
@@ -27,6 +28,7 @@ header{
 }
 
 section{
+  max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -98,8 +100,9 @@ h2{
 
     h3{
       color: #3A4145;
-      font-size: 30px;
-      margin-bottom: 10px;
+      font-size: 24px;
+      margin-bottom: 15px;
+      line-height: 1.1em;
     }
     p{
       color: #242A2E;

@@ -4,13 +4,14 @@ body {
   font-size: 16px;
   margin: 0 auto;
   background-color: #E3E9EA;
-  line-height: 1.4;
-  max-width: 1380px; }
+  line-height: 1.4; }
 
 header {
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #d4dedf; }
+  border-bottom: 1px solid #d4dedf;
+  background: #CADCE0;
+  padding: 50px 20px; }
   header h1 {
     color: #1b2329;
     margin-left: 20px; }
@@ -20,6 +21,7 @@ header {
     margin-right: 20px; }
 
 section {
+  max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -72,8 +74,9 @@ h2 {
         transform: translateY(2px); }
     .group .card-group h3 {
       color: #3A4145;
-      font-size: 30px;
-      margin-bottom: 10px; }
+      font-size: 24px;
+      margin-bottom: 15px;
+      line-height: 1.1em; }
     .group .card-group p {
       color: #242A2E; }
 
