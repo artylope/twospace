@@ -7,15 +7,23 @@ body {
   line-height: 1.4;
   max-width: 1380px; }
 
-header button {
-  margin: 10px;
-  float: right;
-  clear: both; }
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d4dedf; }
+  header h1 {
+    color: #1b2329;
+    margin-left: 20px; }
+  header .row {
+    justify-content: space-between; }
+  header #new-section {
+    margin-right: 20px; }
 
 section {
   margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid #d4dedf; }
   section .row {
     justify-content: space-between; }
     section .row h2 {

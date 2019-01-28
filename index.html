@@ -21,11 +21,10 @@
 <body>
   <div id="app">
   <header id="header">
-    <h1>TWOspace</h1>
+    <div class="row">
+    <h1>TWOspace</h1> <button id="new-section" v-on:click="addSection">New Section</button>
+    </div>
   </header>
-  <section>
-    <button v-on:click="addSection">New Section</button>
-  </section>
   <section v-for="(value, title) in sections">
     <div class="row">
       <h2>{{ title }}</h2>   <button><i class="far fa-edit"></i>Edit</button>

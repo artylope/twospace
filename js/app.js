@@ -79,7 +79,11 @@ window.onload = function () {
       },
       addObject() {
         console.log("dsfdsf");
-      }
+      },
+      addSection() {
+        var newSectionName = prompt("New Section Name, 'e.g. My Links'");
+        console.log(newSectionName);
+      },
     }
   });
 

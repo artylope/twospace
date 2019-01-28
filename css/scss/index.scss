@@ -11,16 +11,25 @@ body{
 }
 
 header{
-  button{
-    margin: 10px;
-    float: right;
-    clear: both;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid darken(#E3E9EA, 5%);
+  h1{
+    color: darken(#2F3D48,10%);
+    margin-left: 20px;
+  }
+  .row{
+    justify-content: space-between;
+  }
+  #new-section{
+    margin-right: 20px;
   }
 }
+
 section{
   margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
   .row{
     justify-content: space-between;
     h2{
@@ -32,7 +41,7 @@ section{
       clear: both;
     }
   }
-  // border-bottom: 1px solid darken(#E3E9EA, 5%);
+  border-bottom: 1px solid darken(#E3E9EA, 5%);
 }
 
 h1,h2,h3,h4,h5,h6{
