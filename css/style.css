@@ -143,7 +143,9 @@ button {
   border: 1px solid #888;
   width: 40%;
   min-width: 200px;
-  min-height: 320px; }
+  min-height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px; }
 
 /* The Close Button */
 .close {
@@ -157,3 +159,22 @@ button {
   color: #000;
   text-decoration: none;
   cursor: pointer; }
+
+.modal-content form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column; }
+  .modal-content form h2 {
+    font-size: 2em;
+    margin-bottom: 1.2em; }
+  .modal-content form label {
+    margin-right: 10px;
+    font-weight: bold;
+    float: left;
+    font-size: 1.2em; }
+  .modal-content form input {
+    float: left;
+    height: 30px;
+    padding: 10px; }
+  .modal-content form button {
+    margin-top: 50px; }
